@@ -1,0 +1,249 @@
+
+
+
+//-----------------------------------------
+//-----------------------------------------
+//twClothSolver Attribute Editor Template
+//-----------------------------------------
+//-----------------------------------------
+
+
+
+
+//AEverletClothSolverTemplate
+global proc AEverletClothSolverTemplate(string $nodeName) { 
+	
+	
+
+	//Vars
+	//-----------------------------------------
+	//-----------------------------------------
+	string $node[];
+	tokenize $nodeName "." $node;
+
+
+	
+	//Header image
+	//-----------------------------------------
+	//-----------------------------------------
+	
+	//create header image
+	editorTemplate -callCustom "verletClothSolver_create_header_image" "verletClothSolver_update_header_image" "Dummy";
+
+
+	
+	//scroll layout
+	editorTemplate -beginScrollLayout;
+
+	
+
+	//Debugging
+	//-----------------------------------------
+	//-----------------------------------------
+	editorTemplate -beginLayout "Debugging" -collapse 0;
+
+	//verbose
+	editorTemplate -addControl "verbose";
+
+	//verboseStaticSolverData
+	editorTemplate -addControl "verboseStaticSolverData";
+
+	//verboseDynamicSolverData
+	editorTemplate -addControl "verboseDynamicSolverData";
+
+	//verboseDrawData
+	editorTemplate -addControl "verboseDrawData";
+
+	//End Layout
+	editorTemplate -endLayout;
+
+
+
+	//Solver Settings
+	//-----------------------------------------
+	//-----------------------------------------
+	editorTemplate -beginLayout "Solver Settings" -collapse 0;
+
+	//solverType
+	editorTemplate -addControl "solverType";
+
+	//thread_count
+	editorTemplate -addControl "thread_count";
+
+	//omp
+	editorTemplate -addControl "omp";
+
+	//repetitions
+	editorTemplate -addControl "repetitions";
+
+	//solveTriangulated
+	editorTemplate -addControl "solveTriangulated";
+
+	
+
+	//Separator
+    editorTemplate -addSeparator;
+
+    //startFrame
+	editorTemplate -addControl "startFrame";
+
+	//currentFrame
+	editorTemplate -addControl "currentFrame";
+
+	//gravity
+	editorTemplate -addControl "gravity";
+
+	//drag
+	editorTemplate -addControl "drag";
+
+	//End Layout
+	editorTemplate -endLayout;
+
+
+
+	//Input Geometry
+	//-----------------------------------------
+	//-----------------------------------------
+	editorTemplate -beginLayout "Input Geometry" -collapse 1;
+
+	//inputGeo
+	editorTemplate -addControl "inputGeo";
+
+	//transformMatrix
+	editorTemplate -addControl "transformMatrix";
+
+	//outputGeo
+	editorTemplate -addControl "outputGeo";
+
+	//End Layout
+	editorTemplate -endLayout;
+	
+
+
+	//Constraints
+	//-----------------------------------------
+	//-----------------------------------------
+	editorTemplate -beginLayout "Constraints" -collapse 0;
+   	
+	   	
+
+	   	//Collision
+		//-----------------------------------------
+		//-----------------------------------------
+		editorTemplate -beginLayout "Collision" -collapse 0;
+
+		//collisionConstraintConvexOffset
+		editorTemplate -addControl "collisionConstraintConvexOffset";
+
+		//collisionConstraint
+		editorTemplate -addControl "collisionConstraint";
+
+		//End Layout
+		editorTemplate -endLayout;
+
+
+
+		//Position
+		//-----------------------------------------
+		//-----------------------------------------
+		editorTemplate -beginLayout "Position" -collapse 0;
+
+		//positionConstraint
+		editorTemplate -addControl "positionConstraint";
+
+		//End Layout
+		editorTemplate -endLayout;
+
+
+
+		//Ground Plane
+		//-----------------------------------------
+		//-----------------------------------------
+		editorTemplate -beginLayout "Ground Plane" -collapse 0;
+
+		//collisionConstraintGroundplaneActive
+		editorTemplate -addControl "collisionConstraintGroundplaneActive";
+		
+		//collisionConstraintGroundplaneVisible
+		editorTemplate -addControl "collisionConstraintGroundplaneVisible";
+
+		//collisionConstraintGroundplaneHeight
+		editorTemplate -addControl "collisionConstraintGroundplaneHeight";
+
+		//collisionConstraintGroundplaneDispSize
+		editorTemplate -addControl "collisionConstraintGroundplaneDispSize";
+
+		//End Layout
+		editorTemplate -endLayout;
+
+	//End Layout
+	editorTemplate -endLayout;
+   
+
+
+	//Visualization
+	//-----------------------------------------
+	//-----------------------------------------
+	editorTemplate -beginLayout "Visualization" -collapse 0;
+
+	//drawMeshlinesActive
+	editorTemplate -addControl "drawMeshlinesActive";
+
+	//drawMeshlinesColorMode
+	editorTemplate -addControl "drawMeshlinesColorMode";
+
+	//End Layout
+	editorTemplate -endLayout;
+
+
+
+
+	
+
+	//Extra controls for unspecified attributes
+	//-----------------------------------------
+	//-----------------------------------------
+	editorTemplate -addExtraControls; 
+	
+	
+
+
+
+
+	//end scroll layout
+	editorTemplate -endScrollLayout;
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+//Header image procedures
+//-----------------------------------------
+//-----------------------------------------
+
+global proc verletClothSolver_create_header_image(string $nodeName)
+{
+	//Header
+	image -w 400 -h 100 -image "header_tw_cloth_solver.png";
+}
+
+
+global proc verletClothSolver_update_header_image(string $nodeName)
+{}
+
+
+
+
+
+

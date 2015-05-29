@@ -1,0 +1,52 @@
+<?xml version = '1.0' encoding = 'UTF-8' ?>
+<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Wed Oct 30 19:34:32 CET 2013'>
+  <XMI.header>    <XMI.documentation>
+      <XMI.exporter>ArgoUML (using Netbeans XMI Writer version 1.0)</XMI.exporter>
+      <XMI.exporterVersion>0.34(6) revised on $Date: 2010-01-11 22:20:14 +0100 (Mon, 11 Jan 2010) $ </XMI.exporterVersion>
+    </XMI.documentation>
+    <XMI.metamodel xmi.name="UML" xmi.version="1.4"/></XMI.header>
+  <XMI.content>
+    <UML:Model xmi.id = '-84-17-11--34--7b6d4f02:1420a6fe9ad:-8000:0000000000000B08'
+      name = 'maya' isSpecification = 'false' isRoot = 'false' isLeaf = 'false'
+      isAbstract = 'false'>
+      <UML:ModelElement.stereotype>
+        <UML:Stereotype xmi.idref = '-84-17-11--34--7b6d4f02:1420a6fe9ad:-8000:0000000000000B09'/>
+      </UML:ModelElement.stereotype>
+      <UML:Namespace.ownedElement>
+        <UML:Stereotype xmi.id = '-84-17-11--34--7b6d4f02:1420a6fe9ad:-8000:0000000000000B09'
+          name = 'profile' isSpecification = 'false' isRoot = 'false' isLeaf = 'false'
+          isAbstract = 'false'/>
+        <UML:DataType xmi.id = '-84-17-11--34--7b6d4f02:1420a6fe9ad:-8000:0000000000000B0A'
+          name = 'MObject' isSpecification = 'false' isRoot = 'false' isLeaf = 'false'
+          isAbstract = 'false'/>
+        <UML:DataType xmi.id = '-84-17-11--34--7b6d4f02:1420a6fe9ad:-8000:0000000000001138'
+          name = 'MString' isSpecification = 'false' isRoot = 'false' isLeaf = 'false'
+          isAbstract = 'false'/>
+        <UML:DataType xmi.id = '-84-17-11--34--7b6d4f02:1420a6fe9ad:-8000:0000000000001139'
+          name = 'MStatus' isSpecification = 'false' isRoot = 'false' isLeaf = 'false'
+          isAbstract = 'false'/>
+        <UML:DataType xmi.id = '-84-17-11--34--7b6d4f02:1420a6fe9ad:-8000:000000000000113A'
+          name = 'MDataBlock' isSpecification = 'false' isRoot = 'false' isLeaf = 'false'
+          isAbstract = 'false'/>
+        <UML:DataType xmi.id = '-84-17-11--34--7b6d4f02:1420a6fe9ad:-8000:000000000000113B'
+          name = 'M3dView' isSpecification = 'false' isRoot = 'false' isLeaf = 'false'
+          isAbstract = 'false'/>
+        <UML:DataType xmi.id = '-84-17-11--34--7b6d4f02:1420a6fe9ad:-8000:000000000000113C'
+          name = 'MDagPath' isSpecification = 'false' isRoot = 'false' isLeaf = 'false'
+          isAbstract = 'false'/>
+        <UML:DataType xmi.id = '-84-17-11--34--7b6d4f02:1420a6fe9ad:-8000:0000000000001670'
+          name = 'MTypeId' isSpecification = 'false' isRoot = 'false' isLeaf = 'false'
+          isAbstract = 'false'/>
+        <UML:DataType xmi.id = '-84-17-11--34-17e2ebae:1420a82f63b:-8000:00000000000012A1'
+          name = 'MPlug' isSpecification = 'false' isRoot = 'false' isLeaf = 'false'
+          isAbstract = 'false'/>
+        <UML:Enumeration xmi.id = '-84-17-11--34-1f273b0a:1420a993f80:-8000:00000000000012AC'
+          name = 'DisplayStyle' isSpecification = 'false' isRoot = 'false' isLeaf = 'false'
+          isAbstract = 'false'/>
+        <UML:Enumeration xmi.id = '-84-17-11--34-1f273b0a:1420a993f80:-8000:00000000000012AD'
+          name = 'DisplayStatus' isSpecification = 'false' isRoot = 'false' isLeaf = 'false'
+          isAbstract = 'false'/>
+      </UML:Namespace.ownedElement>
+    </UML:Model>
+  </XMI.content>
+</XMI>

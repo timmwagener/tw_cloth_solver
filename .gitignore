@@ -1,0 +1,21 @@
+
+
+# Ignore
+x64
+Debug
+*.sln
+*.suo
+*.sdf
+*.log
+*.htm
+*.db
+*.pyc
+
+#un-ignore
+twClothSolver/*
+!twClothSolver/*.h
+!twClothSolver/*.cpp
+!twClothSolver/*.cu
+
+twClothSolverBlockout/*
+!twClothSolverBlockout/*.py
